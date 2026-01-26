@@ -8,7 +8,6 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 import ru.samsung.gamestudio.GameResources;
-import ru.samsung.gamestudio.GameSettings;
 import ru.samsung.gamestudio.MyGdxGame;
 import ru.samsung.gamestudio.components.ButtonView;
 import ru.samsung.gamestudio.managers.ContactManager;
@@ -93,7 +92,7 @@ public class GameScreen extends ScreenAdapter {
             BulletObject bullet = tank.needToShoot();
             if (bullet != null) {
                 bulletArray.add(bullet);
-            };
+            }
         }
 
         if (!Gdx.input.isKeyPressed(Input.Keys.ANY_KEY) && !Gdx.input.isTouched()) {
